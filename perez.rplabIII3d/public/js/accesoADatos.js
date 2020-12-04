@@ -325,7 +325,7 @@ function cargarPromedioPotencia(lista){
     let promedio = average(arrayPotencia);
   
 
-    document.getElementById("txtPotenciaPromedio").value = "$ " + promedio;
+    document.getElementById("txtPotenciaPromedio").value = promedio;
 }
 
 
@@ -336,6 +336,6 @@ function cargarPromedioPotencia(lista){
         return (a + b);
 
     });
-
+    
     return suma / nums.length;
 }

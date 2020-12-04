@@ -5,27 +5,27 @@
       "titulo": "GMC",
       "transaccion": "alquiler",
       "descripcion": "Savana 3500",
-      "precio": "59400920",
+      "precio": 59400920,
       "num_puertas": "4",
-      "num_kms": "803520",
-      "potencia": "61120"
+      "num_kms": 803520,
+      "potencia": 61120
     },
     {
       "id": 2,
       "titulo": "Ford",
       "transaccion": "alquiler",
       "descripcion": "Econoline E250",
-      "precio": 5107498,
+      "precio": 5107,
       "num_puertas": 3,
-      "num_kms": 54836,
-      "potencia": 6767
+      "num_kms": 5483,
+      "potencia": 676
     },
     {
       "id": 3,
       "titulo": "GMC",
       "transaccion": "venta",
       "descripcion": "Savana",
-      "precio": 9651916,
+      "precio": 965,
       "num_puertas": 2,
       "num_kms": 64607,
       "potencia": 7271
@@ -35,67 +35,67 @@
       "titulo": "Mercedes-Benz",
       "transaccion": "venta",
       "descripcion": "SL-Class",
-      "precio": 3975066,
+      "precio": 396,
       "num_puertas": 3,
-      "num_kms": 52438,
-      "potencia": 12830
+      "num_kms": 5243,
+      "potencia": 1280
     },
     {
       "id": 5,
       "titulo": "Mitsubishi",
       "transaccion": "alquiler",
       "descripcion": "Raider",
-      "precio": 7346993,
+      "precio": 73463,
       "num_puertas": 5,
       "num_kms": 30479,
-      "potencia": 18577
+      "potencia": 1857
     },
     {
       "id": 6,
       "titulo": "Porsche",
       "transaccion": "alquiler",
       "descripcion": "911",
-      "precio": 3857096,
+      "precio": 3856,
       "num_puertas": 2,
       "num_kms": 58423,
-      "potencia": 19387
+      "potencia": 1987
     },
     {
       "id": 7,
       "titulo": "Ford",
       "transaccion": "alquiler",
       "descripcion": "Explorer Sport Trac Super Explorer 71. Classic 94.",
-      "precio": "6735688",
+      "precio": 6788,
       "num_puertas": "4",
-      "num_kms": "67712",
-      "potencia": "6584"
+      "num_kms": 67712,
+      "potencia": 6584
     },
     {
       "id": 8,
       "titulo": "Austin Motor Company Limited",
       "transaccion": "venta",
       "descripcion": "Suburban 2500, Vandura Sport City",
-      "precio": "9780450000",
+      "precio": 978000,
       "num_puertas": "4",
-      "num_kms": "21961",
-      "potencia": "14132"
+      "num_kms": 21961,
+      "potencia": 1432
     },
     {
       "id": 9,
       "titulo": "GMC",
       "transaccion": "alquiler",
       "descripcion": "Vandura 1500",
-      "precio": 6579717,
+      "precio": 65717,
       "num_puertas": 3,
       "num_kms": 35838,
-      "potencia": 18801
+      "potencia": 1881
     },
     {
       "id": 10,
       "titulo": "Land Rover",
       "transaccion": "alquiler",
       "descripcion": "LR2",
-      "precio": 6739313,
+      "precio": 6713,
       "num_puertas": 4,
       "num_kms": 98846,
       "potencia": 4028
@@ -105,17 +105,17 @@
       "titulo": "BMW",
       "transaccion": "venta",
       "descripcion": "X5",
-      "precio": 3813847,
+      "precio": 3847,
       "num_puertas": 4,
       "num_kms": 70711,
-      "potencia": 11942
+      "potencia": 1142
     },
     {
       "id": 12,
       "titulo": "Honda",
       "transaccion": "venta",
       "descripcion": "Prelude. City Coupe Accesories",
-      "precio": 4360876,
+      "precio": 4366,
       "num_puertas": 3,
       "num_kms": 32527,
       "potencia": 14459
@@ -125,7 +125,7 @@
       "titulo": "Cadillac",
       "transaccion": "venta",
       "descripcion": "DeVille",
-      "precio": 7607393,
+      "precio": 7693,
       "num_puertas": 5,
       "num_kms": 30213,
       "potencia": 13075
@@ -135,70 +135,80 @@
       "titulo": "Porsche",
       "transaccion": "venta",
       "descripcion": "911",
-      "precio": 4490418,
+      "precio": 4418,
       "num_puertas": 4,
       "num_kms": 65080,
-      "potencia": 12103
+      "potencia": 103
     },
     {
       "id": 15,
       "titulo": "Chevrolet",
       "transaccion": "alquiler",
       "descripcion": "Lumina APV",
-      "precio": 7842951,
+      "precio": 7841,
       "num_puertas": 3,
       "num_kms": 48935,
-      "potencia": 4015
+      "potencia": 45
     },
     {
       "id": 16,
       "titulo": "Lotus",
       "transaccion": "venta",
       "descripcion": "Esprit",
-      "precio": 9696407,
+      "precio": 9607,
       "num_puertas": 4,
       "num_kms": 75754,
-      "potencia": 16419
+      "potencia": 169
     },
     {
       "id": 17,
       "titulo": "BMW",
       "transaccion": "venta",
       "descripcion": "7 Series",
-      "precio": 5009268,
+      "precio": 5068,
       "num_puertas": 5,
       "num_kms": 76829,
-      "potencia": 8598
+      "potencia": 88
     },
     {
       "id": 18,
       "titulo": "Ford",
       "transaccion": "venta",
       "descripcion": "Transit Connect",
-      "precio": 7227463,
+      "precio": 7223,
       "num_puertas": 5,
       "num_kms": 7356,
-      "potencia": 14448
+      "potencia": 148
     },
     {
       "id": 19,
       "titulo": "Ford",
       "transaccion": "venta",
       "descripcion": "Explorer",
-      "precio": 7363209,
+      "precio": 709,
       "num_puertas": 4,
       "num_kms": 73253,
-      "potencia": 14771
+      "potencia": 141
     },
     {
       "id": 20,
       "titulo": "Mazda",
       "transaccion": "alquiler",
       "descripcion": "RX-8",
-      "precio": 8719096,
+      "precio": 896,
       "num_puertas": 5,
       "num_kms": 43113,
-      "potencia": 9463
+      "potencia": 943
+    },
+    {
+      "id": 21,
+      "titulo": "GMC",
+      "transaccion": "alquiler",
+      "descripcion": "Savana 3500",
+      "precio": "59400920",
+      "num_puertas": "4",
+      "num_kms": "803520",
+      "potencia": "61120"
     }
   ]
 }
