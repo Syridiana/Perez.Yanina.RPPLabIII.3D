@@ -2,9 +2,9 @@
 import Anuncio_Auto from "./anuncio_auto.js";
 import {
     addAnuncio,
-    getAnuncios, modifyAnuncio, borrarAnuncio, promedioTransacciones, average
-} from "./accesoADatos.js";
+    getAnuncios, modifyAnuncio, borrarAnuncio } from "./accesoADatos.js";
 import crearTabla from "./tabla.js";
+import {promedioPrecios} from "./consultas.js";
 
 
 
@@ -41,31 +41,7 @@ function inicializarManejadores() {
 
 };
 
-export default function loadLS(){
-    let checked = JSON.parse(localStorage.getItem("anuncios"));
-    let checkBoxes = document.querySelectorAll(".checkboxMargin");
 
-    checkBoxes.forEach(element => {
-
-        let isChecked = false;
-
-
-        checked.forEach(item => {
-
-           if(item == element.name){
-               isChecked = true;
-           }
-        });
-
-        if(!isChecked){
-            element.checked = false;
-        }
-
-    });
-
-    manejadorCheckBox();
-
-}
 
 
 btnGuardar.addEventListener('click', function (e) {
@@ -94,7 +70,6 @@ btnGuardar.addEventListener('click', function (e) {
 
 promedioPicker.addEventListener('change', function (e) {
     filtrarTabla();
-    // promedioPrecios();
 });
 
 
@@ -165,9 +140,6 @@ btnEliminar.addEventListener('click', function (e) {
 
 
 
-
-
-
 function altaUnAnuncio() {
 
 
@@ -231,22 +203,6 @@ function filtrarTabla() {
 }
 
 
-function promedioPrecios(lista) {
-
-
-    let arrayPrecios = lista.map(function (arrayPrecios) {
-
-        return arrayPrecios.precio;
-
-    });
-
-    let nuevo = average(arrayPrecios);
-
-    console.log(nuevo);
-
-    document.getElementById("txtPromedio").value = "$ " + nuevo;
-
-}
 
 
 
@@ -334,3 +290,28 @@ function limpiarPromedio(){
 }
 
 
+export function loadLS(){
+    let checked = JSON.parse(localStorage.getItem("anuncios"));
+    let checkBoxes = document.querySelectorAll(".checkboxMargin");
+
+    checkBoxes.forEach(element => {
+
+        let isChecked = false;
+
+
+        checked.forEach(item => {
+
+           if(item == element.name){
+               isChecked = true;
+           }
+        });
+
+        if(!isChecked){
+            element.checked = false;
+        }
+
+    });
+
+    manejadorCheckBox();
+
+}
