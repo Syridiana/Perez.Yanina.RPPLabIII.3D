@@ -182,6 +182,7 @@ function filtrarTabla() {
 
 
 
+
                 let arrPorTrans = array.filter(item => item.transaccion == transaccion);
 
 
@@ -190,7 +191,7 @@ function filtrarTabla() {
             .then(function (res) {
 
                 divTabla.innerHTML = "";
-                divTabla.appendChild(crearTabla(res));
+                loadLS();
 
                 promedioPrecios(res);
             });
