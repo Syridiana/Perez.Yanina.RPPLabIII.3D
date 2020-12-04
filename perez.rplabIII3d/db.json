@@ -199,16 +199,6 @@
       "num_puertas": 5,
       "num_kms": 43113,
       "potencia": 943
-    },
-    {
-      "id": 21,
-      "titulo": "GMC",
-      "transaccion": "alquiler",
-      "descripcion": "Savana 3500",
-      "precio": "59400920",
-      "num_puertas": "4",
-      "num_kms": "803520",
-      "potencia": "61120"
     }
   ]
 }

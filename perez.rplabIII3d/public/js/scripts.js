@@ -173,12 +173,19 @@ function altaUnAnuncio() {
 
     const titulo = document.getElementById("txtTitulo").value;
     const descripcion = document.getElementById("txtDescripcion").value;
-    const transaccion = document.querySelector('input[name="transaccion"]:checked').value;
+    const venta = document.querySelector('#TVenta');
     const precio = document.getElementById("txtPrecio").value;
     const puertas = document.getElementById("txtPuertas").value;
     const km = document.getElementById("txtKM").value;
     const potencia = document.getElementById("txtPotencia").value;
 
+    let transaccion = "";
+
+    if(venta.checked){
+        transaccion = "venta";
+    } else {
+        transaccion = "alquiler";
+    }
 
     const nuevoAnuncio = new Anuncio_Auto(titulo, transaccion, descripcion, precio, puertas, km, potencia);
 
