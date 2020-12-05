@@ -192,7 +192,7 @@ function filtrarTabla() {
 
                 divTabla.innerHTML = "";
                 divTabla.appendChild(crearTabla(res));
-
+                checkBoxLocal(res);
                 promedioPrecios(res);
             });
 
@@ -314,5 +314,38 @@ export function loadLS(){
     });
 
     manejadorCheckBox();
+
+}
+
+function checkBoxLocal(lista){
+    let allChecks = document.querySelectorAll(".checkboxMargin");
+
+
+
+                let array = lista;
+                let arrayItemsChecked = [];
+                let arrayFiltrado = array.map(function (item) {
+                    allChecks.forEach(element => {
+                        if(!element.checked){
+
+                           delete item[element.value]; 
+
+                        }
+                    });
+                    return item;
+                });
+
+                allChecks.forEach(element => {
+                    if(element.checked){
+
+                        arrayItemsChecked.push(element.value);
+
+                    }
+                });
+
+                localStorage.setItem("anuncios", JSON.stringify(arrayItemsChecked));
+                divTabla.innerHTML = "";
+                divTabla.appendChild(crearTabla(arrayFiltrado));
+
 
 }
