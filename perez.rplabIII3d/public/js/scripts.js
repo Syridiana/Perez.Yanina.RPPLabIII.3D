@@ -191,7 +191,7 @@ function filtrarTabla() {
             .then(function (res) {
 
                 divTabla.innerHTML = "";
-                loadLS();
+                divTabla.appendChild(crearTabla(res));
 
                 promedioPrecios(res);
             });
