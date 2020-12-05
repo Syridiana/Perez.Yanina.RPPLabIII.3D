@@ -104,7 +104,11 @@ btnActualizar.addEventListener('click', function (e) {
 
         if (confirm("Seguro que desea guardar los cambios?")) {
             modifyAnuncio(anuncioNuevo, selectedId);
-            getAnuncios();
+            getAnuncios()
+            .then(function (res) {
+        
+                loadLS();
+            });
         }
 
 
@@ -133,7 +137,11 @@ btnEliminar.addEventListener('click', function (e) {
     }
 
 
-    getAnuncios();
+    getAnuncios()
+    .then(function (res) {
+
+        loadLS();
+    });
     limpiarPromedio();
 
 });
@@ -163,7 +171,11 @@ function altaUnAnuncio() {
 
     addAnuncio(nuevoAnuncio);
 
-    getAnuncios();
+    getAnuncios()
+    .then(function (res) {
+
+        loadLS();
+    });
 }
 
 function filtrarTabla() {
